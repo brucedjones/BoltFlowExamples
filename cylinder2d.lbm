@@ -1,0 +1,36 @@
+#########################################
+#		   LBM-C Config File            #
+#########################################
+
+#===PROJECT VARIABLES===#
+ProjName cylinder2d
+DomainFile cylinder2d.dom
+OutputFile cylinder2d.res
+
+#===SOLUTION CONSTANTS===#
+Tau 1.000000
+Lx 500
+Ly 100
+Lz 1
+DeltaX 1.000000
+DeltaT 1.000000
+
+#===SOLUTION CONFIGURATION===#
+ColType BGK
+Force 0
+MicroBC 1
+MacroBC 1
+Init 0
+Tolerance 0.000000e+00
+C_smag 0.000000e+00
+
+#===TIMING DATA===#
+MaxT 10000
+FileOut 500
+ScreenMes 50
+SteadyCheck 0
+
+#===OUTPUT VARIABLES ===#
+OutputVars 1 1 0 1 1
+ScreenNode 0 50 0
+Interactive 0
